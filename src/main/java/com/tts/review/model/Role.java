@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@Entity
 public class Role {
 
     @Id
@@ -19,4 +19,5 @@ public class Role {
     @Column(name = "role_id")
     private Long id;
     private String role;
+
 }
